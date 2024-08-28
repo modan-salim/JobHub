@@ -16,9 +16,9 @@ const HeroSection = () => {
     }
 
     return (
-        <div className='relative bg-purple-800 text-white py-20 px-4'>
+        <div className='relative bg-gray-900 text-white py-20 px-4'>
             <div className='relative z-10 text-center'>
-                <span className='mx-auto px-4 py-2 rounded-full bg-white text-purple-800 font-medium shadow-lg inline-block'>
+                <span className='mx-auto px-4 py-2 rounded-full bg-white text-gray-900 font-medium shadow-lg inline-block'>
                     Discover Your Future
                 </span>
                 <h1 className='text-4xl md:text-5xl font-bold my-4'>
@@ -27,14 +27,14 @@ const HeroSection = () => {
                 <p className='text-lg md:text-xl mb-6'>
                     Explore thousands of job opportunities and take the next step in your career with ease. Join our community of professionals and find the perfect match for your skills and ambitions.
                 </p>
-                <div className='flex max-w-3xl mx-auto shadow-lg border border-gray-200 rounded-full overflow-hidden'>
+                <div className='flex max-w-3xl mx-auto shadow-lg border border-gray-700 rounded-full overflow-hidden'>
                     <input
                         type="text"
                         placeholder='Search for jobs, companies, or keywords...'
                         onChange={(e) => setQuery(e.target.value)}
-                        className='flex-1 px-4 py-2 outline-none border-none'
+                        className='flex-1 px-4 py-2 outline-none border-none bg-gray-800 text-white placeholder-gray-400'
                     />
-                    <Button onClick={searchJobHandler} className="bg-yellow-400 text-gray-800">
+                    <Button onClick={searchJobHandler} className="bg-yellow-400 text-gray-900">
                         <Search className='h-6 w-6' />
                     </Button>
                 </div>
@@ -44,3 +44,4 @@ const HeroSection = () => {
 }
 
 export default HeroSection;
+
